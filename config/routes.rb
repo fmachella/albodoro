@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  # root 'booking/new'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -39,6 +41,8 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+
+  resources :bookings
 
   # Example resource route with concerns:
   #   concern :toggleable do

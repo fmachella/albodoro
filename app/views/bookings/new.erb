@@ -1,0 +1,10 @@
+Fai la tua prenotazione
+<%= form_for @booking do |f| %>
+    <%= f.label :first_name %>:
+    <%= f.text_field :first_name %><br />
+    <%= f.label :last_name %>:
+    <%= f.text_field :last_name %><br />
+    <%= f.datetime_select :official_event, :ampm => true %><br>
+
+    <%= f.submit %>
+<% end %>
