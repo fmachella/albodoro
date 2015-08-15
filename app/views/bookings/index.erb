@@ -1,0 +1,10 @@
+<h1>Pagina principale</h1>
+<h2>Effettua una richiesta</h2>
+<%= link_to 'Fai una prenotazione', new_booking_path %>
+<h2>Inserisci la tua email per visualizzare lo stato della richiesta</h2>
+<%= form_for @booking, url: bookings_search_path(@booking)  do |f| %>
+    <%= f.label 'Email usata per la prenotazione' %>:
+    <%= f.text_field :email %><br />
+
+    <%= f.submit 'Trova prenotazione' %>
+<% end  %>

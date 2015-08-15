@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  # root 'booking/new'
+  root 'bookings#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -42,7 +42,15 @@ Rails.application.routes.draw do
   #     end
   #   end
 
-  resources :bookings
+  resources :bookings, only: [:new, :create, :show, :index]
+
+  post 'bookings/search', to: 'bookings#search'
+
+  namespace :admin do
+    resources :bookings do
+      patch 'accept' => 'bookings#accept'
+    end
+  end
 
   # Example resource route with concerns:
   #   concern :toggleable do

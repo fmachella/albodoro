@@ -1,0 +1,5 @@
+<h1>Prenotazioni</h1>
+<h2>
+<%= "#{params[:message]}" if params[:message].present? %>
+</h2>
+<%= render partial: 'booking', collection: @bookings %>

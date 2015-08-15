@@ -1,10 +1,25 @@
 Fai la tua prenotazione
 <%= form_for @booking do |f| %>
-    <%= f.label :first_name %>:
-    <%= f.text_field :first_name %><br />
-    <%= f.label :last_name %>:
-    <%= f.text_field :last_name %><br />
-    <%= f.datetime_select :official_event, :ampm => true %><br>
+    <div>
+      <%= f.label :first_name %>:
+      <%= f.text_field :first_name %>
+      <%= f.label :last_name %>:
+      <%= f.text_field :last_name %>
+    </div>
+    <div>
+      <%= f.label :citta_nascita %>:
+      <%= f.text_field :citta_nascita %><br />
+      <%= f.label :anno_nascita %>:
+      <%= f.date_select :anno_nascita, ampm: true %><br>
+    </div>
+    <div>
+      <%= f.label 'Giorno di ritiro' %>:
+      <%= f.date_select :official_event %><br>
+    </div>
+    <div>
+      <%= f.label 'Email richiedente' %>:
+      <%= f.text_field :email %><br />
+    </div>
 
-    <%= f.submit %>
+    <%= f.submit 'Prenota' %>
 <% end %>

@@ -1,0 +1,13 @@
+<div>
+  <h1>Richiesta effettuata da <%= booking.email %></h1>
+  <span>Nome: <%= booking.first_name %></span> <span>Cognome: <%= booking.last_name %></span>
+  <br>
+  <span>Nato a: <%= booking.citta_nascita %></span> <span>il: <%= booking.anno_nascita %></span>
+  <br>
+  <span>Giorno ritiro: <%= booking.official_event %></span>
+  <br>
+  <h3>Stato richiesta: <%= status(booking) %></h3>
+  <%= link_to 'Accetta richiesta', admin_booking_accept_path(booking), method: :patch,  data: { confirm: 'Sei sicuro di voler accettare?'} %>
+  <%= link_to 'Respingi richiesta', 'xxx', method: :patch,  data: { confirm: 'Sei sicuro di voler eliminare per sempre la richiesta?'} %>
+</div>
+<br>
