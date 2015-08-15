@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b8e8bf2-baf0-4ca8-90af-b6ad771dcf35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="albodoro.iws" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8133971" vertical-offset="0" max-vertical-offset="780">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.14354067" vertical-offset="0" max-vertical-offset="780">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -645,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439655832516</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gemfile ritoccato">
+      <created>1439657416194</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1439657416194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,7 +695,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="database mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="database mysql" />
+    <MESSAGE value="gemfile ritoccato" />
+    <option name="LAST_COMMIT_MESSAGE" value="gemfile ritoccato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -949,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8133971" vertical-offset="0" max-vertical-offset="780">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.14354067" vertical-offset="0" max-vertical-offset="780">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding />
         </state>
       </provider>
