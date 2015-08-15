@@ -22,9 +22,12 @@ test:
 
 production:
   <<: *default
-  adapter: mysql
+  adapter: mysql2
+  encoding: utf8
   pool: 5
   timeout: 5000
   database: ruby
   user: adminrUnQcvv
   password: sydZeBJjSXHV
+  host: 127.0.0.1
+  port: 3306
