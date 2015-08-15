@@ -17,6 +17,10 @@ Fai la tua prenotazione
       <%= f.date_select :official_event %><br>
     </div>
     <div>
+      <%= f.label 'Vuoi visitare il luogo della battaglia?' %>:
+      <%= f.check_box :accompaniment %><br>
+    </div>
+    <div>
       <%= f.label 'Email richiedente' %>:
       <%= f.text_field :email %><br />
     </div>

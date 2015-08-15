@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815084720) do
+ActiveRecord::Schema.define(version: 20150815150157) do
 
   create_table "bookings", force: :cascade do |t|
     t.datetime "official_event"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150815084720) do
     t.date     "anno_nascita"
     t.integer  "status",         default: 0
     t.string   "email"
+    t.boolean  "accompaniment"
   end
 
 end

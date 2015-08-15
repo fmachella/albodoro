@@ -4,7 +4,7 @@ class BookingsController < ApplicationController
   end
 
   def create
-    booking_params = params.require(:booking).permit(:first_name,:last_name, :official_event, :citta_nascita, :anno_nascita, :email)
+    booking_params = params.require(:booking).permit(:first_name,:last_name, :official_event, :citta_nascita, :anno_nascita, :email, :accompaniment)
     if (@booking = Booking.create(booking_params))
       @message = 'Registrato'
     else

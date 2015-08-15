@@ -6,3 +6,5 @@ Presto riceverai conferma via email.<br></p>
 <%= "#{@booking.first_name} #{@booking.last_name}" %><br>
 <%= "Richiesta di ritiro il giorno: #{@booking.official_event.strftime('%Y-%m-%d')}" %>
 <%= "alle: #{@booking.official_event.strftime('%H:%M:%S')}" %>
+<br>
+<%= 'Con accompagnamento' if @booking.accompaniment? %>

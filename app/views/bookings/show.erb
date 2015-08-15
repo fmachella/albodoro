@@ -1,1 +1,8 @@
-<%= @booking.inspect %>
+<div>
+  <h1>Stato richiesta: <%= "#{status @booking}" %></h1>
+  <div><%= "Medaglia per: #{@booking.first_name} #{@booking.last_name}" %></div>
+  <div>Nato il: <%= @booking.anno_nascita %> a <%= @booking.citta_nascita %></div>
+  <div>Consegna il: <%= "#{@booking.official_event.strftime('%Y %m %d')}" %></div>
+  <div><%= 'Con accompagnamento' if @booking.accompaniment? %></div>
+  <div>Notifiche a: <%= "#{@booking.email}" %></div>
+</div>
